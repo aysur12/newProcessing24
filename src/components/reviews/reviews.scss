@@ -1,0 +1,112 @@
+.reviews {
+  width: 100%;
+  background-color: $gray;
+
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 81px 0.938em;
+    overflow: hidden;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+  }
+
+  &__up-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 1em;
+  }
+
+  &__button {
+    width: 56px;
+    height: 56px;
+    background-color: $white;
+    border: 1px solid $stroke-input;
+
+    &:disabled {
+      background-color: $stroke-table;
+    }
+  }
+
+  &__container {
+    width: 100%;
+  }
+
+  &__track {
+    display: flex;
+    gap: 30px;
+    transition: 0.2s;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 368px;
+    padding: 40px;
+    background-color: $white;
+  }
+
+  &__item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__item-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__item-user {
+    margin: 0;
+    color: $black;
+    font: 600 0.938rem/1.2 $main-font-family;
+  }
+
+  &__item-job-title {
+    margin: 0;
+    color: $gray-text;
+    font: 500 0.75rem/1.25 $main-font-family;
+  }
+
+  &__item-text-card {
+    margin: 0;
+    color: $black;
+    font: 400 1rem/1.375 $main-font-family;
+  }
+
+  &__item-link {
+    color: $blue;
+    font: 600 0.813rem/1.23 $main-font-family;
+    cursor: pointer;
+
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+
+  &__link-block {
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+  }
+
+  &__link {
+    width: 258px;
+  }
+}

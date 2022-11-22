@@ -1,0 +1,44 @@
+include ../../components/logo/logo
+include ../../components/tel/tel
+include ../../components/button/button
+include ../../components/nav/nav
+
+header.header
+  .header__up-container
+    .header__logo
+      +logo({src: "./assets/images/logo.png"})
+    .header__left-container
+      .header__tel
+        +tel({
+          href: "tel:+7(495)1278280",
+          telNumber: "8 (495) 127-82-80",
+          srcImg: "./assets/images/phone.svg",
+        })
+      .header__cabinet-container
+        .header__link-left
+          +button({
+            href: "/mock-address/change-me",
+            text: "Напишите нам",
+            forHeader: true,
+          })
+        .header__link-right
+          +button({
+            href: "/mock-address/change-me",
+            text: "Личный кабинет",
+            forHeader: true,
+            withIcon: true,
+            srcImg: "./assets/images/user.svg",
+            altImg: "Иконка личного кабинета"
+          })
+  .header__nav-container
+    +nav({
+      navItems: [
+        { navItemName: "Доставка топлива", href: "/mock-address/change-me"},
+        { navItemName: "Топливные карты", href: "/mock-address/change-me", withDropdown: true},
+        { navItemName: "АЗС", href: "/mock-address/change-me", withDropdown: true},
+        { navItemName: "Цены на топливо", href: "/mock-address/change-me"},
+        { navItemName: "О компании", href: "/mock-address/change-me", withDropdown: true},
+        { navItemName: "Контакты", href: "/mock-address/change-me"},
+      ],
+    })
+    

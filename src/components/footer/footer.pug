@@ -1,0 +1,39 @@
+include ../../components/logo/logo
+
+footer.footer
+  .footer__up-container
+    .footer__wrapper
+      .footer__left-block
+        .footer__logo-copyright
+          .footer__logo
+            +logo({src: "./assets/images/logo.png"})
+          .footer__copyright
+            span 
+            != "© 2019 "
+            span ООО "Процессинг 24"
+        .footer__links
+          ul.footer__list.footer__list_first
+            li.footer__item
+              a.footer__item-link(href= "/mock-address/change-me") Карта АЗС
+            li.footer__item
+              a.footer__item-link(href= "/mock-address/change-me") АЗС по регионам
+            li.footer__item
+              a.footer__item-link(href= "/mock-address/change-me") АЗС по брендам
+            li.footer__item
+              a.footer__item-link(href= "/mock-address/change-me") Доставка топлива
+          ul.footer__list.footer__list_second
+            li.footer__item
+              a.footer__item-link(href= "/mock-address/change-me") Контакты
+            li.footer__item
+              a.footer__item-link(href= "/mock-address/change-me") О компании
+            li.footer__item
+              a.footer__item-link(href= "/mock-address/change-me") Личный кабинет
+      .footer__right-block
+        p.footer__contacts Отдел продаж
+        .footer__tel-block
+          a.footer__tel(href="tel:+74951278170") 8 (495) 127-81-70
+  .footer__down-container
+    .footer__wrapper.footer__wrapper_down
+      .footer__policy
+        a.footer__policy-link(href= "/mock-address/change-me") Политика конфиденциальности
+

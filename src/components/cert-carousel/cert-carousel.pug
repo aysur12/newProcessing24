@@ -1,0 +1,35 @@
+include ../../components/heading-2/heading-2
+
+mixin cert-carousel(params= {})
+  -
+    const {
+      itemsCarousel= [],
+    } = params;
+  
+  .cert-carousel
+    .cert-carousel__up-block
+      .cert-carousel__heading
+        +heading-2({text: "Сертификаты качества топлива"})
+      .cert-carousel__buttons
+        button.cert-carousel__button.cert-carousel__button_prev.js-cert-carousel__button_prev
+          img(src="./assets/images/arrow-prev.svg", alt="Стрелка назад")
+        button.cert-carousel__button.cert-carousel__button_next.js-cert-carousel__button_next
+          img(src="./assets/images/arrow-next.svg", alt="Стрелка вперед")
+    .cert-cert-carousel__container.js-cert-cert-carousel__container
+      .cert-carousel__track.js-cert-carousel__track
+        each itemCarousel in itemsCarousel
+          - const {src, alt} = itemCarousel;
+          .cert-carousel__item.cert-carousel__item_for-image.js-cert-carousel__item
+            img.carousel__img(src= src alt= alt)
+
+            
+        if forReview
+          each itemCarousel in itemsCarousel
+            - const {userName, jobTitle, textCard} = itemCarousel;
+            .cert-carousel__item.cert-carousel__item_for-review
+              .cert-carousel__item__content
+                .cert-carousel__item-heading
+                  p.cert-carousel__item-user= userName
+                  p.cert-carousel__item-job-title= jobTitle
+                .cert-carousel__item-text-card= textCard
+              a.cert-carousel__item-link Подробнее

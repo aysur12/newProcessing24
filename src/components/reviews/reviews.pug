@@ -1,0 +1,38 @@
+include ../../components/heading-2/heading-2
+include ../../components/button/button
+
+mixin reviews(params = {})
+  -
+    const {
+      reviewItems = [],
+    } = params;
+  
+  .reviews
+    .reviews__wrapper
+      .reviews__content
+        .reviews__up-block
+          .reviews__heading
+            +heading-2({text: "Отзывы"})
+          .reviews__buttons
+            button.reviews__button.reviews__button_prev.js-reviews__button_prev
+              img(src="./assets/images/arrow-prev.svg", alt="Стрелка назад")
+            button.reviews__button.reviews__button_next.js-reviews__button_next
+              img(src="./assets/images/arrow-next.svg", alt="Стрелка вперед")
+        .reviews__container.js-reviews__container
+          .reviews__track.js-reviews__track
+            each reviewItem in reviewItems
+              - const {userName, jobTitle, textCard} = reviewItem ;
+              .reviews__item.js-reviews__item
+                .reviews__item-content
+                  .reviews__item-heading
+                    p.reviews__item-user= userName
+                    p.reviews__item-job-title
+                      != jobTitle
+                  .reviews__item-text-card= textCard
+                a.reviews__item-link Подробнее
+      .reviews__link-block
+        .reviews__link
+          +button({
+            href: "/mock-address/change-me",
+            text: "Читать все отзывы",
+          })

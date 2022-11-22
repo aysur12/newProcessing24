@@ -1,0 +1,14 @@
+mixin swiper(params = {})
+  -
+    const {
+      partnersItems = [],
+
+    } = params;
+
+  .swiper
+    .swiper__container.swiper-container
+      .swiper__wrapper.swiper-wrapper
+        each item in partnersItems
+          .swiper__slide.swiper-slide
+            img.swiper__slide-img(src= item.src, alt= item.alt)
+      .swiper__pagination.swiper-pagination

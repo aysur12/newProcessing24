@@ -1,0 +1,48 @@
+include ../../components/button/button
+
+mixin form-quick-order(params = {})
+  -
+    const {
+      textHeading= "",
+      textHeadingSpan= "",
+      textInputText= "",
+      textInputTel= "",
+      typeBtn= "",
+      textBtn= "",
+      checkboxText= "",
+    } = params;
+
+  .form-quick-order
+    h2.form-quick-order__heading= textHeading
+      span.form-quick-order__heading-span= textHeadingSpan
+    form.form-quick-order__form(action="#")
+      fieldset.form-quick-order__fieldset
+        .form-quick-order__input-block
+          p.form-quick-order__name-input= textInputText
+          label.form-quick-order__label
+            input.form-quick-order__input(
+              type="text",
+              name="name",
+              placeholder="Иван",
+              pattern="^[А-Яа-яЁё\s]+$",
+              required
+            )
+        .form-quick-order__input-block
+          p.form-quick-order__name-input= textInputTel
+          label.form-quick-order__label
+            input.form-quick-order__input.js-form-quick-order__input_tel(
+              id="phone1"
+              type="tel",
+              name= "phone",
+              placeholder= "+7 (___) ___-__-__",
+              pattern="\+?[0-9\s\-\(\)]+",
+              required
+            )
+        +button({
+          type: typeBtn,
+          text: textBtn,
+        })
+      .form-quick-order__checkbox
+        label.form-quick-order__checkbox-label
+          input.form-quick-order__checkbox-input(type="checkbox" name="checkbox" checked)
+          p.form-quick-order__checkbox-text= checkboxText

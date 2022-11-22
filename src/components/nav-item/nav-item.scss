@@ -1,0 +1,56 @@
+.nav-item {
+  color: $black;
+  font: 600 0.938rem/1.2 $main-font-family;
+
+  &__link {
+    color: $black;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__details {
+    position: relative;
+    &:focus,
+    &:hover {
+      color: $blue;
+    }
+
+    &:hover .nav-item__svg-path {
+      stroke: $blue;
+    }
+
+    &[open] .nav-item__svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    list-style: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__dropdown {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: $gray;
+
+  }
+}

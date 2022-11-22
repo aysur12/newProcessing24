@@ -1,0 +1,42 @@
+include ../../components/button/button
+
+mixin form-order-card(params={})
+  -
+    const {
+      cardTitle= "",
+      priceTitle= "",
+      priceAmount= "",
+      costTitle= "",
+      costAmount= "",
+      costInfo= "",
+      profitTitle= "",
+      profitAmount= "",
+      profitInfo= "",
+      typeBtn= "",
+      textBtn= "",
+    } = params;
+
+  .form-order-card
+    h3.form-order-card__heading= cardTitle
+    .form-order-card__content
+      .form-order-card__row
+        .form-order-card__title-amount-block
+          p.form-order-card__title= priceTitle
+          p.form-order-card__amount= priceAmount
+      .form-order-card__row
+        .form-order-card__title-amount-block
+          p.form-order-card__title= costTitle
+          p.form-order-card__amount= costAmount
+        p.form-order-card__info
+          != costInfo
+      .form-order-card__row.form-order-card__row_profit
+        .form-order-card__title-amount-block
+          p.form-order-card__title= profitTitle
+          p.form-order-card__amount.form-order-card__amount_profit= profitAmount
+        p.form-order-card__info
+          != profitInfo
+    .form-order-card__button
+        +button({
+          type: typeBtn,
+          text: textBtn,
+        })

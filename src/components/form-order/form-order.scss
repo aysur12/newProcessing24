@@ -1,0 +1,134 @@
+.form-order {
+  width: 100%;
+  background-color: $gray;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 75px 0.938em;
+  }
+
+  &__heading {
+    margin: 0;
+    color: $black;
+    font: 700 2.25rem/1.22 $main-font-family;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1118px;
+  }
+
+  &__fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex-basis: 409px;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  &__input-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &_range {
+      position: relative;
+    }
+  }
+
+  &__name-input {
+    margin: 0;
+    color: $black;
+    font: 500 0.75rem/1.25 $main-font-family;
+  }
+
+  &__label {
+    width: 100%;
+  }
+
+  &__select {
+    width: 100%;
+    padding: 0.929em 1em 1em;
+    font: 400 0.875rem/1.21 $main-font-family;
+    border: 1px solid $stroke-input;
+    outline: none;
+    appearance: none;
+    background: url(../../assets/images/arrow.svg) no-repeat 376px center;
+    background-color: $white;
+  }
+
+  &__label {
+    &_range {
+      position: absolute;
+      top: 54px;
+      max-width: 407px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.929em 1em 1em;
+    font: 400 0.875rem/1.21 $main-font-family;
+    border: 1px solid $stroke-input;
+  }
+
+  &__output {
+    width: 100%;
+    padding: 0.929em 1em 1em;
+    background-color: $white;
+    font: 400 0.875rem/1.21 $main-font-family;
+    border: 1px solid $stroke-input;
+  }
+
+  &__range {
+    width: 100%;
+    appearance: none;
+
+    &::-webkit-slider-runnable-track {
+      height: 0;
+      border: 1px solid $blue;
+      background-color: $white;
+    }
+
+    &::-moz-range-track {
+      height: 0;
+      border: 1px solid $blue;
+      background-color: $white;
+    }
+
+    &::-webkit-slider-thumb {
+      width: 16px;
+      height: 16px;
+      background: $blue;
+      border-radius: 50%;
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -8px;
+      box-shadow: 0px 4px 16px rgba(4, 60, 119, 0.2);
+    }
+
+    &::-moz-range-thumb {
+      width: 16px;
+      height: 16px;
+      margin-top: -8px;
+      background: $blue;
+      border-radius: 50%;
+      cursor: pointer;
+      -webkit-appearance: none;
+      box-shadow: 0px 4px 16px rgba(4, 60, 119, 0.2);
+    }
+  }
+
+  &__card {
+    flex-basis: 638px;
+  }
+}

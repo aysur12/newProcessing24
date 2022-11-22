@@ -1,0 +1,62 @@
+.steps-work-card {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+  max-width: 353px;
+  height: 394px;
+  padding: 30px 30px 27px 30px;
+  background-color: $dark-blue;
+
+  &__up-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__time-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    flex-basis: 90px;
+
+  }
+
+  &__down-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__time-text,
+  &__title,
+  &__info,
+  &__small-info {
+    margin: 0;
+    color: $white;
+  }
+
+  &__time-text {
+    font: 600 0.938rem/1.2 $main-font-family;
+  }
+
+  &__title {
+    font: 500 1.313rem/1.23 $main-font-family;
+  }
+
+  &__info {
+    padding-right: 8px;
+    font: 400 1rem/1.375 $main-font-family;
+  }
+
+  &__info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  &__small-info {
+    padding-right: 8px;
+    font: 400 0.75rem/1.41 $main-font-family;
+  }
+}

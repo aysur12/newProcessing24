@@ -1,0 +1,64 @@
+.main-page {
+  width: 100%;
+  max-width: 1440px;
+  margin: 5.688em auto 0;
+
+  &__container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 0.938em;
+  }
+
+  &__heading-1 {
+    margin-bottom: 3em;
+  }
+
+  &__form-quick-order {
+    margin-bottom: 6.313em;
+  }
+
+  &__table-price {
+    margin-bottom: 6.25em;
+  }
+
+  &__steps-work {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 100px 0;
+  }
+
+  &__steps-work-cards {
+    display: flex;
+    gap: 1.938em;
+  }
+
+  &__benefits {
+    background-color: $gray;
+  }
+  
+  &__benefits-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 81px 0.938em 72px;
+  }
+
+  &__benefits-cards {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  &__heading-2 {
+    margin-bottom: 26px;
+  }
+
+  &__swiper {
+    margin-bottom: 49px;
+  }
+}

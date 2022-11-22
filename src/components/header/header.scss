@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+  max-width: 1440px;
+
+  &__up-container {
+    display: flex;
+    justify-content: space-between;
+    height: 78px;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 0.938em;
+  }
+
+  &__logo {
+    margin-top: 8px;
+  }
+
+  &__left-container {
+    display: flex;
+    align-items: center;
+    gap: 2.188em;
+    margin-left: 1em;
+  }
+
+  &__cabinet-container {
+    display: flex;
+    max-width: 352px;
+  }
+
+  &__nav-container {
+    width: 100%;
+  }
+}

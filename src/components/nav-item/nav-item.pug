@@ -1,0 +1,20 @@
+mixin nav-item(params = {})
+  -
+    const {
+      navItemName = "",
+      href = "",
+      withDropdown = false,
+    } = params;
+  
+  if withDropdown
+    .nav-item
+      details.nav-item__details(title= navItemName)
+        summary.nav-item__summary
+          span.nav-item__title= navItemName
+          .nav-item__arrow
+            svg.nav-item__svg(width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path.nav-item__svg-path( d="M0.833328 1.5L5 5.66667L9.16666 1.5" stroke="black" stroke-width="1.8")
+        .nav-item__dropdown
+  else
+    .nav-item
+      a.nav-item__link(href= href, title= navItemName)= navItemName
