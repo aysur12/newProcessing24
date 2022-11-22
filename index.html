@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заголовок страницы</title>
+    <link href="./assets/styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__up-container">
+        <div class="header__logo">
+              <div class="logo"><a class="logo__link" href="./index.html"><img class="logo__img" src="./assets/images/logo.png" alt="Логотип компании"></a></div>
+        </div>
+        <div class="header__left-container">
+          <div class="header__tel">
+                <div class="tel">
+                  <div class="tel__img-block"><img class="tel__img" src="./assets/images/phone.svg" alt="Ярлык телефона"></div>
+                  <div class="tel__link-block"><a class="tel__link" href="tel:+7(495)1278280">8 (495) 127-82-80</a></div>
+                </div>
+          </div>
+          <div class="header__cabinet-container">
+            <div class="header__link-left">
+                  <a class="button button_header button_link" href="/mock-address/change-me">
+                    <div class="button__text">Напишите нам</div>
+                  </a>
+            </div>
+            <div class="header__link-right">
+                  <a class="button button_header button_link" href="/mock-address/change-me">
+                    <div class="button__icon"><img class="button__icon-img" src="./assets/images/user.svg" alt="Иконка личного кабинета"></div>
+                    <div class="button__text">Личный кабинет</div>
+                  </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__nav-container">
+            <div class="nav">
+              <nav class="nav__menu">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                        <div class="nav-item"><a class="nav-item__link" href="/mock-address/change-me" title="Доставка топлива">Доставка топлива</a></div>
+                  </li>
+                  <li class="nav__item">
+                        <div class="nav-item">
+                          <details class="nav-item__details" title="Топливные карты">
+                            <summary class="nav-item__summary"><span class="nav-item__title">Топливные карты</span>
+                              <div class="nav-item__arrow">
+                                <svg class="nav-item__svg" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path class="nav-item__svg-path" d="M0.833328 1.5L5 5.66667L9.16666 1.5" stroke="black" stroke-width="1.8"></path>
+                                </svg>
+                              </div>
+                            </summary>
+                            <div class="nav-item__dropdown"></div>
+                          </details>
+                        </div>
+                  </li>
+                  <li class="nav__item">
+                        <div class="nav-item">
+                          <details class="nav-item__details" title="АЗС">
+                            <summary class="nav-item__summary"><span class="nav-item__title">АЗС</span>
+                              <div class="nav-item__arrow">
+                                <svg class="nav-item__svg" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path class="nav-item__svg-path" d="M0.833328 1.5L5 5.66667L9.16666 1.5" stroke="black" stroke-width="1.8"></path>
+                                </svg>
+                              </div>
+                            </summary>
+                            <div class="nav-item__dropdown"></div>
+                          </details>
+                        </div>
+                  </li>
+                  <li class="nav__item">
+                        <div class="nav-item"><a class="nav-item__link" href="/mock-address/change-me" title="Цены на топливо">Цены на топливо</a></div>
+                  </li>
+                  <li class="nav__item">
+                        <div class="nav-item">
+                          <details class="nav-item__details" title="О компании">
+                            <summary class="nav-item__summary"><span class="nav-item__title">О компании</span>
+                              <div class="nav-item__arrow">
+                                <svg class="nav-item__svg" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path class="nav-item__svg-path" d="M0.833328 1.5L5 5.66667L9.16666 1.5" stroke="black" stroke-width="1.8"></path>
+                                </svg>
+                              </div>
+                            </summary>
+                            <div class="nav-item__dropdown"></div>
+                          </details>
+                        </div>
+                  </li>
+                  <li class="nav__item">
+                        <div class="nav-item"><a class="nav-item__link" href="/mock-address/change-me" title="Контакты">Контакты</a></div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+      </div>
+    </header>
+    <main class="main-page">
+      <div class="main-page__container">
+        <div class="main-page__heading-1">
+          <h1 class="heading-1">Доставка топлива</h1>
+        </div>
+        <div class="main-page__form-quick-order">
+          <div class="form-quick-order">
+            <h2 class="form-quick-order__heading">Быстрый <span class="form-quick-order__heading-span">заказ топлива</span></h2>
+            <form class="form-quick-order__form" action="#">
+              <fieldset class="form-quick-order__fieldset">
+                <div class="form-quick-order__input-block">
+                  <p class="form-quick-order__name-input">Ваше имя</p>
+                  <label class="form-quick-order__label">
+                    <input class="form-quick-order__input" type="text" name="name" placeholder="Иван" pattern="^[А-Яа-яЁёs]+$" required="required"/>
+                  </label>
+                </div>
+                <div class="form-quick-order__input-block">
+                  <p class="form-quick-order__name-input">Номер телефона</p>
+                  <label class="form-quick-order__label">
+                    <input class="form-quick-order__input js-form-quick-order__input_tel" id="phone1" type="tel" name="phone" placeholder="+7 (___) ___-__-__" pattern="+?[0-9s-()]+" required="required"/>
+                  </label>
+                </div>
+                    <button class="button button_button" type="submit">
+                      <div class="button__text">Заказать топливо</div>
+                    </button>
+              </fieldset>
+              <div class="form-quick-order__checkbox">
+                <label class="form-quick-order__checkbox-label">
+                  <input class="form-quick-order__checkbox-input" type="checkbox" name="checkbox" checked="checked"/>
+                  <p class="form-quick-order__checkbox-text">Я согласен с условиями обработки данных</p>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="main-page__table-price">
+          <div class="table-price">
+            <h2 class="table-price__heading">Стоимость топлива</h2>
+            <table class="table-price__table">
+              <col class="table-price__column table-price__column_one"/>
+              <col class="table-price__column table-price__column_two"/>
+              <col class="table-price__column table-price__column_three"/>
+              <col class="table-price__column table-price__column_four"/>
+              <col class="table-price__column table-price__column_five"/>
+              <thead class="table-price__thead">
+                <tr class="table-price__head-row">
+                  <th class="table-price__th table-price__th_column-one">Сорт топлива</th>
+                  <th class="table-price__th">Экологический класс</th>
+                  <th class="table-price__th">Производитель</th>
+                  <th class="table-price__th">Наличный расчет</th>
+                  <th class="table-price__th table-price__th_column-five">Безналичный расчет</th>
+                </tr>
+              </thead>
+              <tr class="table-price__padding"></tr>
+              <tr>
+                <td class="table-price__td table-price__td_column-one" rowspan="5">ДТ</td>
+                <td class="table-price__td" rowspan="3">ЕВРО-5</td>
+                <td class="table-price__td table-price__td_border-right-left-none">Газпромнефть</td>
+                <td class="table-price__td table-price__td_border-right-left-none">45.43 р.</td>
+                <td class="table-price__td table-price__td_border-left-none">44.43 р.</td>
+              </tr>
+              <tr>
+                <td class="table-price__td table-price__td_border-right-left-none">Лукойл</td>
+                <td class="table-price__td table-price__td_border-right-left-none">45.16 р.</td>
+                <td class="table-price__td table-price__td_border-left-none">43.98 р.</td>
+              </tr>
+              <tr>
+                <td class="table-price__td table-price__td_border-right-left-none">Роснефть</td>
+                <td class="table-price__td table-price__td_border-right-left-none">42.34 р.</td>
+                <td class="table-price__td table-price__td_border-left-none">41.64 р.</td>
+              </tr>
+              <tr>
+                <td class="table-price__td" rowspan="2">ЕВРО-4</td>
+                <td class="table-price__td table-price__td_border-right-left-none">Газпромнефть</td>
+                <td class="table-price__td table-price__td_border-right-left-none">-</td>
+                <td class="table-price__td table-price__td_border-left-none">-</td>
+              </tr>
+              <tr>
+                <td class="table-price__td table-price__td_border-right-left-none">Лукойл</td>
+                <td class="table-price__td table-price__td_border-right-left-none">41.16 р.</td>
+                <td class="table-price__td table-price__td_border-left-none">40.67 р.</td>
+              </tr>
+              <tr class="table-price__padding"></tr>
+              <tr>
+                <td class="table-price__td table-price__td_column-one" rowspan="8">АИ-95</td>
+                <td class="table-price__td" rowspan="3">ЕВРО-5</td>
+                <td class="table-price__td table-price__td_border-right-left-none">Газпромнефть</td>
+                <td class="table-price__td table-price__td_border-right-left-none">45.43 р.</td>
+                <td class="table-price__td table-price__td_border-left-none">44.43 р.</td>
+              </tr>
+              <tr>
+                <td class="table-price__td table-price__td_border-right-left-none">Роснефть</td>
+                <td class="table-price__td table-price__td_border-right-left-none">42.34 р.</td>
+                <td class="table-price__td table-price__td_border-left-none">41.64 р.</td>
+              </tr>
+              <tr>
+                <td class="table-price__td table-price__td_border-right-left-none">Лукойл</td>
+                <td class="table-price__td table-price__td_border-right-left-none">45.16 р.</td>
+                <td class="table-price__td table-price__td_border-left-none">43.98 р.</td>
+              </tr>
+              <tr>
+                <td class="table-price__td" rowspan="2">ЕВРО-4</td>
+                <td class="table-price__td table-price__td_border-right-left-none">Лукойл</td>
+                <td class="table-price__td table-price__td_border-right-left-none">41.16 р.</td>
+                <td class="table-price__td table-price__td_border-left-none">40.67 р.</td>
+              </tr>
+              <tr>
+                <td class="table-price__td table-price__td_border-right-left-none">Газпромнефть</td>
+                <td class="table-price__td table-price__td_border-right-left-none">-</td>
+                <td class="table-price__td table-price__td_border-left-none">-</td>
+              </tr>
+              <tr>
+                <td class="table-price__td table-price__td_text-center" rowspan="3">ЕВРО-3</td>
+                <td class="table-price__td table-price__td_padding table-price__td_border-right-left-none">Роснефть</td>
+                <td class="table-price__td table-price__td_padding table-price__td_border-right-left-none">42.34 р.</td>
+                <td class="table-price__td table-price__td_padding table-price__td_border-left-none">41.64 р.</td>
+              </tr>
+              <tr>
+                <td class="table-price__td table-price__td_border-right-left-none">Газпромнефть</td>
+                <td class="table-price__td table-price__td_border-right-left-none">-</td>
+                <td class="table-price__td table-price__td_border-left-none">-</td>
+              </tr>
+              <tr>
+                <td class="table-price__td table-price__td_border-right-left-none">Лукойл</td>
+                <td class="table-price__td table-price__td_border-right-left-none">45.16 р.</td>
+                <td class="table-price__td table-price__td_border-left-none">43.98 р.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="main-page__form-order">
+        <div class="form-order">
+          <div class="form-order__container">
+            <h2 class="form-order__heading">Топливо с доставкой</h2>
+            <form class="form-order__form" action="#" oninput="fuelOutput.value=fuelCount.value">
+              <fieldset class="form-order__fieldset">
+                <div class="form-order__input-block">
+                  <p class="form-order__name-input">Вид топлива</p>
+                  <select class="form-order__select" name="select-fuel">
+                    <option class="form-order__option" value="ДТ">ДТ</option>
+                    <option class="form-order__option" value="AИ-95">AИ-95</option>
+                  </select>
+                </div>
+                <div class="form-order__input-block form-order__input-block_range">
+                  <p class="form-order__name-input">Объем топлива</p>
+                  <output class="form-order__output" name="fuelOutput">1670 литров</output>
+                  <label class="form-order__label form-order__label_range">
+                    <input class="form-order__range" type="range" name="fuelCount" min="1" max="10000" value="1670" step="3000"/>
+                  </label>
+                </div>
+                <div class="form-order__input-block">
+                  <p class="form-order__name-input">Место доставки</p>
+                  <label class="form-order__label">
+                    <input class="form-order__input" type="text" name="area" placeholder="Укажите место" pattern="^[А-Яа-яЁёs]+$" required="required"/>
+                  </label>
+                </div>
+                <div class="form-order__input-block">
+                  <p class="form-order__name-input">Ваше имя</p>
+                  <label class="form-order__label">
+                    <input class="form-order__input" type="text" name="name" placeholder="Иван" pattern="^[А-Яа-яЁёs]+$" required="required"/>
+                  </label>
+                </div>
+                <div class="form-order__input-block">
+                  <p class="form-order__name-input">Номер телефона</p>
+                  <label class="form-order__label">
+                    <input class="form-order__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__" pattern="+?[0-9s-()]+" required="required"/>
+                  </label>
+                </div>
+              </fieldset>
+              <div class="form-order__card">
+                <div class="form-order-card">
+                  <h3 class="form-order-card__heading">Итого</h3>
+                  <div class="form-order-card__content">
+                    <div class="form-order-card__row">
+                      <div class="form-order-card__title-amount-block">
+                        <p class="form-order-card__title">Стоимость топлива</p>
+                        <p class="form-order-card__amount">77 350.00 ₽</p>
+                      </div>
+                    </div>
+                    <div class="form-order-card__row">
+                      <div class="form-order-card__title-amount-block">
+                        <p class="form-order-card__title">Цена за литр:</p>
+                        <p class="form-order-card__amount">45.50 ₽</p>
+                      </div>
+                      <p class="form-order-card__info">Цена и стоимость указаны ориентировочно.<br>Точные цену и стоимость собщит наш менеджер при подтверждении заявки.
+                      </p>
+                    </div>
+                    <div class="form-order-card__row form-order-card__row_profit">
+                      <div class="form-order-card__title-amount-block">
+                        <p class="form-order-card__title">Выгода:</p>
+                        <p class="form-order-card__amount form-order-card__amount_profit">6 953.00 ₽</p>
+                      </div>
+                      <p class="form-order-card__info">При цене на АЗС &nbsp 49.59 ₽ за литр, цены актуальны на  23.11.2020 г. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="form-order-card__button">
+                        <button class="button button_button" type="submit">
+                          <div class="button__text">Заказать топливо</div>
+                        </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="main-page__container">
+        <div class="main-page__steps-work">
+          <h2 class="heading-2">Как мы работаем</h2>
+          <div class="main-page__steps-work-cards">
+            <div class="main-page__steps-work-card">
+              <div class="steps-work-card">
+                <div class="steps-work-card__up-content">
+                  <div class="steps-work-card__icon-block"><img src="./assets/images/click.svg" alt="Иконка клика"/></div>
+                  <div class="steps-work-card__time-block">
+                    <p class="steps-work-card__time-text">1-3 мин.</p>
+                    <div class="steps-work-card__arrow"><img src="./assets/images/arrow-step.svg" alt="Стрелка"/></div>
+                  </div>
+                </div>
+                <div class="steps-work-card__down-content">
+                  <p class="steps-work-card__title">Оформление заявки</p>
+                  <div class="steps-work-card__info-block">
+                    <p class="steps-work-card__info">Заполните заявку на сайте, укажите удобное для вас место приезда заправщика, сорт и количество топлива, которое хотите купить</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-page__steps-work-card">
+              <div class="steps-work-card">
+                <div class="steps-work-card__up-content">
+                  <div class="steps-work-card__icon-block"><img src="./assets/images/phone-card.svg" alt="Иконка телефона"/></div>
+                  <div class="steps-work-card__time-block">
+                    <p class="steps-work-card__time-text">1-3 мин.</p>
+                    <div class="steps-work-card__arrow"><img src="./assets/images/arrow-step.svg" alt="Стрелка"/></div>
+                  </div>
+                </div>
+                <div class="steps-work-card__down-content">
+                  <p class="steps-work-card__title">Подтверждение заявки менеджером</p>
+                  <div class="steps-work-card__info-block">
+                    <p class="steps-work-card__info">Дождитесь звонка нашего менеджера для уточнения условий заказа</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-page__steps-work-card">
+              <div class="steps-work-card">
+                <div class="steps-work-card__up-content">
+                  <div class="steps-work-card__icon-block"><img src="./assets/images/gas.svg" alt="Иконка бочки"/></div>
+                  <div class="steps-work-card__time-block">
+                    <p class="steps-work-card__time-text">30-90 мин.</p>
+                  </div>
+                </div>
+                <div class="steps-work-card__down-content">
+                  <p class="steps-work-card__title">Заправка вашего автомобиля</p>
+                  <div class="steps-work-card__info-block">
+                    <p class="steps-work-card__info">В назначенное время приедет заправщик и заправит автомобиль топливом.</p>
+                    <p class="p steps-work-card__small-info">Если у заказчика есть действующий договор на топливные карты, то при оплате можно провести транзакцию через терминал. Переносное устройство есть у каждого заправщика</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-page__benefits">
+        <div class="main-page__benefits-container">
+          <h2 class="heading-2">Преимущества сервиса</h2>
+          <div class="main-page__benefits-cards">
+            <div class="main-page__benefits-card">
+              <div class="card-benefit">
+                <div class="card-benefit__icon"><img class="card-benefit__icon-img" src="./assets/images/certificate.svg" alt="Иконка сертификата"/></div>
+                <div class="card-benefit__content">
+                  <p class="card-benefit__title">Качество топлива</p>
+                  <p class="card-benefit__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+                </div>
+              </div>
+            </div>
+            <div class="main-page__benefits-card">
+              <div class="card-benefit">
+                <div class="card-benefit__icon"><img class="card-benefit__icon-img" src="./assets/images/clock.svg" alt="Иконка часов"/></div>
+                <div class="card-benefit__content">
+                  <p class="card-benefit__title">Бережем ваше время и нервы</p>
+                  <p class="card-benefit__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+                </div>
+              </div>
+            </div>
+            <div class="main-page__benefits-card">
+              <div class="card-benefit">
+                <div class="card-benefit__icon"><img class="card-benefit__icon-img" src="./assets/images/ruble.svg" alt="Иконка рубля"/></div>
+                <div class="card-benefit__content">
+                  <p class="card-benefit__title">Цена</p>
+                  <p class="card-benefit__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+                </div>
+              </div>
+            </div>
+            <div class="main-page__benefits-card">
+              <div class="card-benefit">
+                <div class="card-benefit__icon"><img class="card-benefit__icon-img" src="./assets/images/place.svg" alt="Иконка метки на карте"/></div>
+                <div class="card-benefit__content">
+                  <p class="card-benefit__title">Ваш комфорт—наша забота</p>
+                  <p class="card-benefit__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+                </div>
+              </div>
+            </div>
+            <div class="main-page__benefits-card">
+              <div class="card-benefit">
+                <div class="card-benefit__icon"><img class="card-benefit__icon-img" src="./assets/images/shield.svg" alt="Иконка щита"/></div>
+                <div class="card-benefit__content">
+                  <p class="card-benefit__title">Безопасность процесса</p>
+                  <p class="card-benefit__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+                </div>
+              </div>
+            </div>
+            <div class="main-page__benefits-card">
+              <div class="card-benefit">
+                <div class="card-benefit__icon"><img class="card-benefit__icon-img" src="./assets/images/way.svg" alt="Иконка маршрута на карте"/></div>
+                <div class="card-benefit__content">
+                  <p class="card-benefit__title">Несколько ТС в одном месте?</p>
+                  <p class="card-benefit__text">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-page__container">
+        <div class="cert-carousel">
+          <div class="cert-carousel__up-block">
+            <div class="cert-carousel__heading">
+              <h2 class="heading-2">Сертификаты качества топлива</h2>
+            </div>
+            <div class="cert-carousel__buttons">
+              <button class="cert-carousel__button cert-carousel__button_prev js-cert-carousel__button_prev"><img src="./assets/images/arrow-prev.svg" alt="Стрелка назад"/></button>
+              <button class="cert-carousel__button cert-carousel__button_next js-cert-carousel__button_next"><img src="./assets/images/arrow-next.svg" alt="Стрелка вперед"/></button>
+            </div>
+          </div>
+          <div class="cert-cert-carousel__container js-cert-cert-carousel__container">
+            <div class="cert-carousel__track js-cert-carousel__track">
+              <div class="cert-carousel__item cert-carousel__item_for-image js-cert-carousel__item"><img class="carousel__img" src="./assets/images/sert-1.jpg" alt="Первый сертификат"/></div>
+              <div class="cert-carousel__item cert-carousel__item_for-image js-cert-carousel__item"><img class="carousel__img" src="./assets/images/sert-2.jpg" alt="Второй сертификат"/></div>
+              <div class="cert-carousel__item cert-carousel__item_for-image js-cert-carousel__item"><img class="carousel__img" src="./assets/images/sert-3.jpg" alt="Третий сертификат"/></div>
+              <div class="cert-carousel__item cert-carousel__item_for-image js-cert-carousel__item"><img class="carousel__img" src="./assets/images/sert-4.jpg" alt="Четвертый сертификат"/></div>
+              <div class="cert-carousel__item cert-carousel__item_for-image js-cert-carousel__item"><img class="carousel__img" src="./assets/images/sert-4.jpg" alt="Пятый сертификат"/></div>
+              <div class="cert-carousel__item cert-carousel__item_for-image js-cert-carousel__item"><img class="carousel__img" src="./assets/images/sert-3.jpg" alt="Шестой сертификат"/></div>
+              <div class="cert-carousel__item cert-carousel__item_for-image js-cert-carousel__item"><img class="carousel__img" src="./assets/images/sert-2.jpg" alt="Седьмой сертификат"/></div>
+              <div class="cert-carousel__item cert-carousel__item_for-image js-cert-carousel__item"><img class="carousel__img" src="./assets/images/sert-1.jpg" alt="Восьмой сертификат"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-page__container">
+        <div class="main-page__heading-2">
+          <h2 class="heading-2">Наши партнеры</h2>
+        </div>
+        <div class="main-page__swiper">
+          <div class="swiper">
+            <div class="swiper__container swiper-container">
+              <div class="swiper__wrapper swiper-wrapper">
+                <div class="swiper__slide swiper-slide"><img class="swiper__slide-img" src="./assets/images/lukoil.png" alt="Логотип Лукойл"/></div>
+                <div class="swiper__slide swiper-slide"><img class="swiper__slide-img" src="./assets/images/gazprom.png" alt="Логотип Газпром"/></div>
+                <div class="swiper__slide swiper-slide"><img class="swiper__slide-img" src="./assets/images/rosneft.png" alt="Логотип Роснефть"/></div>
+                <div class="swiper__slide swiper-slide"><img class="swiper__slide-img" src="./assets/images/tatneft.png" alt="Логотип Татнефть"/></div>
+                <div class="swiper__slide swiper-slide"><img class="swiper__slide-img" src="./assets/images/lukoil.png" alt="Логотип Лукойл"/></div>
+                <div class="swiper__slide swiper-slide"><img class="swiper__slide-img" src="./assets/images/gazprom.png" alt="Логотип Газпром"/></div>
+              </div>
+              <div class="swiper__pagination swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-page__reviews">
+        <div class="reviews">
+          <div class="reviews__wrapper">
+            <div class="reviews__content">
+              <div class="reviews__up-block">
+                <div class="reviews__heading">
+                  <h2 class="heading-2">Отзывы</h2>
+                </div>
+                <div class="reviews__buttons">
+                  <button class="reviews__button reviews__button_prev js-reviews__button_prev"><img src="./assets/images/arrow-prev.svg" alt="Стрелка назад"/></button>
+                  <button class="reviews__button reviews__button_next js-reviews__button_next"><img src="./assets/images/arrow-next.svg" alt="Стрелка вперед"/></button>
+                </div>
+              </div>
+              <div class="reviews__container js-reviews__container">
+                <div class="reviews__track js-reviews__track">
+                  <div class="reviews__item js-reviews__item">
+                    <div class="reviews__item-content">
+                      <div class="reviews__item-heading">
+                        <p class="reviews__item-user">Гусев Вячеслав</p>
+                        <p class="reviews__item-job-title">Индивидуальный предприниматель
+                        </p>
+                      </div>
+                      <div class="reviews__item-text-card">Velit, lectus sit urna tincidunt augue. Cursus vulputate pellentesque faucibus euismod. Diam pharetra, non, ut integer dui feugiat porttitor at. Non, dignissim enim viverra fringilla sit. Etiam justo a dignissim sociis vitae, nisi, justo, feugiat.</div>
+                    </div><a class="reviews__item-link">Подробнее</a>
+                  </div>
+                  <div class="reviews__item js-reviews__item">
+                    <div class="reviews__item-content">
+                      <div class="reviews__item-heading">
+                        <p class="reviews__item-user">Зеленов Евгений</p>
+                        <p class="reviews__item-job-title">Гененеральный директор <br> трансопртной компании
+                        </p>
+                      </div>
+                      <div class="reviews__item-text-card">Mi auctor sit habitasse sed mi cras ullamcorper massa sed. In augue fames sodales pretium, at scelerisque. Pulvinar a mattis pharetra mi, aliquet sem tristique lorem eleifend. Nisl, scelerisque ut libero, pellentesque. Tincidunt vestibulum volutpat lacus imperdiet morbi vulputate tristique facilisi.</div>
+                    </div><a class="reviews__item-link">Подробнее</a>
+                  </div>
+                  <div class="reviews__item js-reviews__item">
+                    <div class="reviews__item-content">
+                      <div class="reviews__item-heading">
+                        <p class="reviews__item-user">Зеленов Евгений</p>
+                        <p class="reviews__item-job-title">Гененеральный менеджер
+                        </p>
+                      </div>
+                      <div class="reviews__item-text-card">Mi auctor sit habitasse sed mi cras ullamcorper massa sed. In augue fames sodales pretium, at scelerisque. Pulvinar a mattis pharetra mi, aliquet sem tristique lorem eleifend. Nisl, scelerisque ut libero, pellentesque. Tincidunt vestibulum volutpat lacus imperdiet morbi vulputate tristique facilisi.</div>
+                    </div><a class="reviews__item-link">Подробнее</a>
+                  </div>
+                  <div class="reviews__item js-reviews__item">
+                    <div class="reviews__item-content">
+                      <div class="reviews__item-heading">
+                        <p class="reviews__item-user">Зеленов Евгений</p>
+                        <p class="reviews__item-job-title">Гененеральный директор <br> трансопртной компании
+                        </p>
+                      </div>
+                      <div class="reviews__item-text-card">Mi auctor sit habitasse sed mi cras ullamcorper massa sed. In augue fames sodales pretium, at scelerisque. Pulvinar a mattis pharetra mi, aliquet sem tristique lorem eleifend. Nisl, scelerisque ut libero, pellentesque. Tincidunt vestibulum volutpat lacus imperdiet morbi vulputate tristique facilisi.</div>
+                    </div><a class="reviews__item-link">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__link-block">
+              <div class="reviews__link">
+                    <a class="button button_link" href="/mock-address/change-me">
+                      <div class="button__text">Читать все отзывы</div>
+                    </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-page__consultation">
+        <div class="consultation">
+          <div class="consultation__wrapper">
+            <h2 class="consultation__heading">Остались вопросы?</h2>
+            <p class="consultation__info">Готовы ответить на любой Ваш вопрос. Оставьте свой номер телефона и мы свяжемся с вами в ближайшее время</p>
+            <form class="consultation__form" action="#">
+              <fieldset class="consultation__fieldset">
+                <label class="consultation__label">
+                  <input class="consultation__input" type="text" name="name" placeholder="Ваше имя" pattern="^[А-Яа-яЁёs]+$" required="required"/>
+                </label>
+                <label class="consultation__label">
+                  <input class="consultation__input" id="phone2" type="tel" name="phone" placeholder="Номер телефона" pattern="+?[0-9s-()]+" required="required"/>
+                </label>
+                <div class="consultation__btn">
+                      <button class="button button_consult button_button" type="submit">
+                        <div class="button__text">Перезвоните мне</div>
+                      </button>
+                </div>
+                <p class="consultation__politics">Нажимая на кнопку «Перезвоните мне» я соглашаюсь с<span class="consultation__link-block"><a class="consultation__link" href="/mock-address/change-me"> политикой конфиденциальности</a></span></p>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__up-container">
+        <div class="footer__wrapper">
+          <div class="footer__left-block">
+            <div class="footer__logo-copyright">
+              <div class="footer__logo">
+                    <div class="logo"><a class="logo__link" href="./index.html"><img class="logo__img" src="./assets/images/logo.png" alt="Логотип компании"></a></div>
+              </div>
+              <div class="footer__copyright"><span> </span>© 2019 <span>ООО "Процессинг 24"</span>
+              </div>
+            </div>
+            <div class="footer__links">
+              <ul class="footer__list footer__list_first">
+                <li class="footer__item"><a class="footer__item-link" href="/mock-address/change-me">Карта АЗС</a></li>
+                <li class="footer__item"><a class="footer__item-link" href="/mock-address/change-me">АЗС по регионам</a></li>
+                <li class="footer__item"><a class="footer__item-link" href="/mock-address/change-me">АЗС по брендам</a></li>
+                <li class="footer__item"><a class="footer__item-link" href="/mock-address/change-me">Доставка топлива</a></li>
+              </ul>
+              <ul class="footer__list footer__list_second">
+                <li class="footer__item"><a class="footer__item-link" href="/mock-address/change-me">Контакты</a></li>
+                <li class="footer__item"><a class="footer__item-link" href="/mock-address/change-me">О компании</a></li>
+                <li class="footer__item"><a class="footer__item-link" href="/mock-address/change-me">Личный кабинет</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__right-block">
+            <p class="footer__contacts">Отдел продаж</p>
+            <div class="footer__tel-block"><a class="footer__tel" href="tel:+74951278170">8 (495) 127-81-70</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__down-container">
+        <div class="footer__wrapper footer__wrapper_down">
+          <div class="footer__policy"><a class="footer__policy-link" href="/mock-address/change-me">Политика конфиденциальности</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
